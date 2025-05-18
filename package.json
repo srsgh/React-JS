@@ -1,7 +1,6 @@
 {
   "name": "2025-react",
   "version": "1.0.0",
-  "default": "App.js",
   "scripts": {
     "test": "jest"
   },

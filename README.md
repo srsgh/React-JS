@@ -26,7 +26,8 @@
 - Diagnostic
 - Error Handling
 - HTTPs
-- Tree Shaking
+- Tree Shaking: remove unused code
+- Prod(npx parcel build index.html) / dev(npx parcel index.html) bundles
 
 # react
 
