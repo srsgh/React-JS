@@ -46,3 +46,7 @@
 # JSX
 
 - XML-like / html-like syntax
+- Parcel uses Babel package to transpile JSX before sent to js engine: JSX=>React.createElement(,,)
+- camelCase in atttributes
+- class (attribute of html) is className in JSX
+- wrap multi-line JSX into ()

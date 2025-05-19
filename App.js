@@ -14,8 +14,12 @@ const heading = React.createElement(
 );
 */
 
-//Using JSX: -
-const jsx_heading = <h1 id="heading">Value For HTML Element</h1>;
+//Using JSX: - Parcel uses Babel package to transpile JSX before sent to js engine
+const jsx_heading = (
+  <h1 id="heading" className="headclass">
+    Value For HTML Element
+  </h1>
+);
 
 /*Nesting example: -
 <div id="parent">
