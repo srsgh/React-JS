@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 /*
+Create React element using core react: -
 const element=React.createElemet("html tag", {props/attributes for that html tag}, "child /value for that html element"/Array of children ); 
 element returned is a react.element = JS Object with props> (attributes and children)
 Can be Nested+ Have Siblings
@@ -12,6 +13,9 @@ const heading = React.createElement(
   "Value For HTML Element"
 );
 */
+
+//Using JSX: -
+const jsx_heading = <h1 id="heading">Value For HTML Element</h1>;
 
 /*Nesting example: -
 <div id="parent">
@@ -37,6 +41,7 @@ Siblings example: -
   </div>
 </div>
 */
+/*
 const parent_siblings = React.createElement(
   "div",
   { id: "parent" },
@@ -45,7 +50,7 @@ const parent_siblings = React.createElement(
     React.createElement("h2", {}, "from h2"),
   ])
 );
-
+*/
 /*
 React only works at the root(could be minimal part of your project)
 */
@@ -57,4 +62,5 @@ html_element_id.render(react_elememt_js_object)
 */
 // root.render(heading);
 // root.render(parent);
-root.render(parent_siblings);
+// root.render(parent_siblings);
+root.render(jsx_heading);

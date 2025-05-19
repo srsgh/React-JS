@@ -36,3 +36,13 @@
 # react-dom
 
 > npm install react-dom
+
+# browserslist
+
+# scripts in package.json
+
+- npm run start
+
+# JSX
+
+- XML-like / html-like syntax
