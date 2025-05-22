@@ -1,4 +1,24 @@
-#heading {
-  color: #00f;
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-items {
+  min-width: 70%;
+}
+
+.nav-items > ul {
+  justify-content: space-between;
+  font-size: 24px;
+  list-style-type: none;
+  display: flex;
 }
 /*# sourceMappingURL=2025 React.9e4c6fd2.css.map */

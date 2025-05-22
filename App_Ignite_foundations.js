@@ -51,7 +51,6 @@ const Title = () => {
     </>
   );
 };
-
 const ReactComponentInsideJSX = () => {
   return <strong>This is React Componenet within JSX Code</strong>;
 };

@@ -1,3 +1,22 @@
-#heading {
-  color: blue;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0px 12px 0px 12px;
+}
+.logo-container {
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.nav-items {
+  min-width: 70%;
+}
+.nav-items > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 24px;
 }
