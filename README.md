@@ -63,4 +63,4 @@
 - Syntax (rendering): <Name/>
 - Component Composition
 - Inject JSX/React Element into React Component: {JSX Code}
-- Inject ReactComponent into JSX/React ELement: <Name/> or <Name></Name>
+- Inject ReactComponent into JSX/React ELement: <Name/> or <Name></Name> or {Name()}
