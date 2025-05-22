@@ -44,25 +44,45 @@ const ReactFunctionalComponent = () => {
 
 /* Component Composition */
 const Title = () => {
-  return <h1>This is Title Component.</h1>;
+  return (
+    <>
+      <h1>Component Composition</h1>
+      <h2>This is Title Component.</h2>
+    </>
+  );
 };
+
+const ReactComponentInsideJSX = () => {
+  return <strong>This is React Componenet within JSX Code</strong>;
+};
+const jsxCode = (
+  <div>
+    <br />
+    Start of injected JSX Code
+    <br />
+    This code is from Injected JSX, <br />
+    which basically is JS Code.
+    <br />
+    <ReactComponentInsideJSX />
+    <br />
+    End of injected JSX Code
+  </div>
+);
 const Content = () => {
   return (
     <div>
       Hi, <strong>{prompt("Whats your name?", "DefaultUserName")}</strong> This
       is Content Component.
+      {jsxCode}
     </div>
   );
 };
 const Footer = () => {
-  return <h1>This is Footer Component.</h1>;
+  return <h2>This is Footer Component.</h2>;
 };
 const ComponentComposition = () => {
   return (
-    <div
-      id="conta
-    iner"
-    >
+    <div id="container">
       <Title />
       <Content />
       <Footer />

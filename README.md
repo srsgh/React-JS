@@ -50,7 +50,8 @@
 - camelCase in atttributes
 - class (attribute of html) is className in JSX
 - wrap multi-line JSX into ()
-- Inject JS into JSX: use {} to run JS expression in JSX code {Javascript expression}
+- Inject JS into JSX: use {} to run JS expression in JSX code {JS expression}
+- Sanitizes the JS data : prevents Cross site scripting
 
 # React Component
 
@@ -61,3 +62,5 @@
 - Syntax (naming convention): [A-Z]+....
 - Syntax (rendering): <Name/>
 - Component Composition
+- Inject JSX/React Element into React Component: {JSX Code}
+- Inject ReactComponent into JSX/React ELement: <Name/>
