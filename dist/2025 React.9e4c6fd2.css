@@ -21,4 +21,25 @@
   list-style-type: none;
   display: flex;
 }
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.res-card {
+  background-color: #f0f0f0;
+  flex-direction: column;
+  align-content: center;
+  width: 150px;
+  height: 350px;
+  margin: 5px;
+  padding: 7px;
+  display: flex;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  display: flex;
+}
 /*# sourceMappingURL=2025 React.9e4c6fd2.css.map */
