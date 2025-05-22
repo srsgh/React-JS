@@ -43,6 +43,11 @@
 
 - npm run start
 
+# .render()
+
+- html_element_id.render(react_elememt_js_object)
+- .render() converts react_elememt_js_object to HTML code and place wi html_element_id
+
 # JSX
 
 - XML-like / html-like syntax
