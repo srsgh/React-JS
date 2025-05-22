@@ -50,3 +50,14 @@
 - camelCase in atttributes
 - class (attribute of html) is className in JSX
 - wrap multi-line JSX into ()
+- Inject JS into JSX: use {} to run JS expression in JSX code {Javascript expression}
+
+# React Component
+
+- const ReactComponentName = () => { return (JSXCode); }
+- Class based Component (old)
+- Functional Component (new)
+- JS Function that returns a JSX element which is transpiled into react element by Babel
+- Syntax (naming convention): [A-Z]+....
+- Syntax (rendering): <Name/>
+- Component Composition

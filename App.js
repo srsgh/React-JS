@@ -1,5 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+/*
+React only works at the root(could be minimal part of your project)
+*/
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 /*
 Create React element using core react: -
 const element=React.createElemet("html tag", {props/attributes for that html tag}, "child /value for that html element"/Array of children ); 
@@ -15,11 +21,54 @@ const heading = React.createElement(
 */
 
 //Using JSX: - Parcel uses Babel package to transpile JSX before sent to js engine
-const jsx_heading = (
-  <h1 id="heading" className="headclass">
+/*
+const jsxHeading = (
+  <h1 id="heading" className="headClass">
     Value For HTML Element
   </h1>
 );
+*/
+
+/*Functional Component (JS Fn that returns a JSX code which Babel transpiles to React Element) */
+/*
+const ReactFunctionalComponent = () => {
+  return (
+    <div id="container">
+      <h1 className="heading">
+        This is JSX Code from React Functional component.
+      </h1>
+    </div>
+  );
+};
+*/
+
+/* Component Composition */
+const Title = () => {
+  return <h1>This is Title Component.</h1>;
+};
+const Content = () => {
+  return (
+    <div>
+      Hi, <strong>{prompt("Whats your name?", "DefaultUserName")}</strong> This
+      is Content Component.
+    </div>
+  );
+};
+const Footer = () => {
+  return <h1>This is Footer Component.</h1>;
+};
+const ComponentComposition = () => {
+  return (
+    <div
+      id="conta
+    iner"
+    >
+      <Title />
+      <Content />
+      <Footer />
+    </div>
+  );
+};
 
 /*Nesting example: -
 <div id="parent">
@@ -55,10 +104,6 @@ const parent_siblings = React.createElement(
   ])
 );
 */
-/*
-React only works at the root(could be minimal part of your project)
-*/
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
 /*
 html_element_id.render(react_elememt_js_object)
@@ -67,4 +112,12 @@ html_element_id.render(react_elememt_js_object)
 // root.render(heading);
 // root.render(parent);
 // root.render(parent_siblings);
-root.render(jsx_heading);
+
+//Rendering a React Element: -
+// root.render(jsxHeading);
+
+//Rendering a React Component: -
+// root.render(<ReactFunctionalComponent />);
+
+//Rendering a React Component Composition: -
+root.render(<ComponentComposition />);
