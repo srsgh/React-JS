@@ -76,3 +76,7 @@
 - arguments/props wrapped as object and passed to React Component (a js fn) by React
 
 # config driven UI
+
+# key
+
+- helps uniquely idenity iterative React component, saving unnecessary rendering

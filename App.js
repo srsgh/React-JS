@@ -824,7 +824,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {resObj.map((item) => (
-          <ResterauntCard resData={item} />
+          <ResterauntCard key={item.info.id} resData={item} />
         ))}
       </div>
     </div>
