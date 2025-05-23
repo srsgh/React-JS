@@ -69,3 +69,10 @@
 - Component Composition
 - Inject JSX/React Element into React Component: {JSX Code}
 - Inject ReactComponent into JSX/React ELement: <Name/> or <Name></Name> or {Name()}
+
+# props
+
+- pass data ti component
+- arguments/props wrapped as object and passed to React Component (a js fn) by React
+
+# config driven UI
