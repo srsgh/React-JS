@@ -80,3 +80,4 @@
 # key
 
 - helps uniquely idenity iterative React component, saving unnecessary rendering
+- using index as keys is bad practise
