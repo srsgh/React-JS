@@ -69,6 +69,10 @@
 - Component Composition
 - Inject JSX/React Element into React Component: {JSX Code}
 - Inject ReactComponent into JSX/React ELement: <Name/> or <Name></Name> or {Name()}
+- export(default, for 1 export per module) component: export default ComponentName;
+- to import default exports: import ComponentName from "file_loc";
+- export(named, for multiple exports) component: export const varname=value;
+- to import named exports: import {ComponentName} from "file_loc";
 
 # props
 
@@ -81,3 +85,24 @@
 
 - helps uniquely idenity iterative React component, saving unnecessary rendering
 - using index as keys is bad practise
+
+# State variable
+
+- super powerful variable
+
+# React Hooks
+
+- Noraml JS utility fn
+- useState(): to create state variables
+- import {useState} from "react";
+- const [varname,setvar]=useState(varinit);
+- setVar(varnewval)
+- Whenever state variable updates, react re renders the component
+- useEffect()
+
+# Reconciliation Algorithm/ React Fibre
+
+- > = React 16
+- Finds out the difference between virtual DOM and the update UI
+- Diff Algo
+- React does Efficient DOM Manipulation bc of Virtual DOM

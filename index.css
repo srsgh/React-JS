@@ -41,3 +41,8 @@
   display: flex;
   flex-wrap: wrap;
 }
+.search {
+}
+.filter-btn {
+  margin: 5px;
+}
